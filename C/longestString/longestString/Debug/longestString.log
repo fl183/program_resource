@@ -1,0 +1,4 @@
+﻿  longestString.cpp
+d:\program_resource\c\longeststring\longeststring\longeststring.cpp(23): warning C4101: “a”: 未引用的局部变量
+  longestString.vcxproj -> D:\program_resource\C\longestString\Debug\longestString.exe
+  longestString.vcxproj -> D:\program_resource\C\longestString\Debug\longestString.pdb (Full PDB)
