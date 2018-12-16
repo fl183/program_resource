@@ -1,0 +1,7 @@
+2018-12-16 13:50:40.409  INFO 10552 --- [main] org.lt.demo.AnnotationLogger             : Starting AnnotationLogger on DESKTOP-LM4NOBT with PID 10552 (started by 11042 in D:\program_resource\java\demo)
+2018-12-16 13:50:40.411  INFO 10552 --- [main] org.lt.demo.AnnotationLogger             : No active profile set, falling back to default profiles: default
+2018-12-16 13:50:42.734  INFO 10552 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-16 13:50:43.476  INFO 10552 --- [main] org.lt.demo.AnnotationLogger             : Started AnnotationLogger in 3.587 seconds (JVM running for 5.328)
+2018-12-16 13:50:43.730  INFO 10552 --- [main] org.lt.demo.AnnotationLogger             : info
+2018-12-16 13:50:43.737 ERROR 10552 --- [main] org.lt.demo.AnnotationLogger             : error
+2018-12-16 13:50:43.752  INFO 10552 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
