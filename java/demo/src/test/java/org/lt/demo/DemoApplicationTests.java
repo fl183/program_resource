@@ -2,6 +2,9 @@ package org.lt.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.lt.demo.dao.ProductCategoryRepository;
+import org.lt.demo.dataobject.ProductCategory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -9,9 +12,22 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class DemoApplicationTests {
 
+	@Autowired
+	private ProductCategoryRepository repository;
+
 	@Test
-	public void contextLoads() {
+	public void getOneTest() {
+		ProductCategory productCategory = repository.getOne(1);
+		System.out.println(productCategory.toString());
 	}
+
+	@Test
+    public void saveTest() {
+	    ProductCategory productCategory = new ProductCategory();
+	    productCategory.setCategoryName("女生最爱");
+	    productCategory.setCategoryType(3);
+	    repository.save(productCategory);
+    }
 
 }
 
