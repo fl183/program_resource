@@ -18,6 +18,8 @@ public class DemoApplicationTests {
 	@Test
 	public void getOneTest() {
 		ProductCategory productCategory = repository.getOne(1);
+		productCategory.setCategoryType(10);
+		repository.save(productCategory);
 		System.out.println(productCategory.toString());
 	}
 
@@ -28,6 +30,11 @@ public class DemoApplicationTests {
 	    productCategory.setCategoryType(3);
 	    repository.save(productCategory);
     }
+
+    @Test
+	public void saveTest2() {
+		ProductCategory productCategory = new ProductCategory();
+	}
 
 }
 
