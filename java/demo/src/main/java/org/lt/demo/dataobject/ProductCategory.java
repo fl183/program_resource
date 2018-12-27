@@ -28,4 +28,10 @@ public class ProductCategory {
     private String categoryName;
 
     private Integer categoryType;
+
+        public ProductCategory() {}
+        public ProductCategory(String categoryName, Integer categoryType) {
+            this.categoryName = categoryName;
+            this.categoryType = categoryType;
+        }
 }
