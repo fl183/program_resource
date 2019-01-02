@@ -9,4 +9,5 @@ import java.util.List;
 public interface ProductInfoRepository extends JpaRepository<ProductInfo, String> {
 
     List<ProductInfo> findByProductPrice(BigDecimal productPrice);
+//    List<ProductInfo> findByProductStatus(Integer status);
 }
