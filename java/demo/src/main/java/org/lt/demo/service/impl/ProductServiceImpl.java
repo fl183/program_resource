@@ -22,10 +22,10 @@ public class ProductServiceImpl implements ProductService {
         return repository.getOne(productId);
     }
 
-//    @Override
-//    public List<ProductInfo> findUpAll() {
-//        return repository.findByProductStatus(ProductStatusEnum.UP.getCode());
-//    }
+    @Override
+    public List<ProductInfo> findUpAll() {
+        return repository.findByProductStatus(ProductStatusEnum.UP.getCode());
+    }
 
     @Override
     public Page<ProductInfo> findAll(Pageable pageable) {
